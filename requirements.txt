@@ -1,0 +1,108 @@
+# AI Short-Video Creator - Requirements
+# Core dependencies for video generation using open-source AI models
+
+# Streamlit Web Framework
+streamlit>=1.28.0
+streamlit-option-menu>=0.3.6
+
+# Deep Learning and AI Models
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+transformers>=4.35.0
+diffusers>=0.21.0
+accelerate>=0.24.0
+sentencepiece>=0.1.99
+
+# Text-to-Speech
+TTS>=0.18.0
+pyttsx3>=2.90
+
+# Audio Processing
+librosa>=0.10.1
+soundfile>=0.12.1
+pydub>=0.25.1
+
+# Speech Recognition and Transcription
+openai-whisper>=20231117
+speechrecognition>=3.10.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# Video Processing
+moviepy>=1.0.3
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+ffmpeg-python>=0.2.0
+
+# Caption and Subtitle Processing
+pysrt>=1.1.2
+webvtt-py>=0.4.6
+
+# Natural Language Processing
+nltk>=3.8.1
+spacy>=3.7.0
+textstat>=0.7.3
+
+# Scientific Computing
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.0.0
+
+# HTTP Requests and APIs
+requests>=2.31.0
+httpx>=0.25.0
+
+# File and Data Handling
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+toml>=0.10.2
+
+# Progress and Logging
+tqdm>=4.66.0
+loguru>=0.7.2
+
+# Web Scraping (Optional)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Model Storage and Loading
+safetensors>=0.4.0
+huggingface-hub>=0.17.0
+
+# Utilities
+python-dateutil>=2.8.2
+typing-extensions>=4.8.0
+
+# Development and Testing (Optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.1.0
+mypy>=1.6.0
+
+# System Requirements Notes:
+# - Python 3.8+ required
+# - FFmpeg must be installed on system (for video processing)
+# - For GPU acceleration: CUDA 11.8+ and compatible GPU
+# - Minimum 8GB RAM recommended, 16GB+ for Stable Diffusion
+# - 10GB+ free disk space for models and temporary files
+
+# Installation Commands:
+# 
+# 1. Install system dependencies (Ubuntu/Debian):
+# sudo apt update
+# sudo apt install ffmpeg python3-dev build-essential
+# 
+# 2. Install Python dependencies:
+# pip install -r requirements.txt
+# 
+# 3. Download additional NLP models (optional):
+# python -c "import nltk; nltk.download('punkt')"
+# python -m spacy download en_core_web_sm
+# 
+# 4. For GPU support (NVIDIA):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
